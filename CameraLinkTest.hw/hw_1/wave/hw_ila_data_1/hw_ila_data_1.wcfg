@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/CameraLinkTest.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject db_ref_id="1" type="logic" fp_name="design_1_i/axis_dwidth_converter_0_m_axis_tvalid">
+      <obj_property name="ElementShortName">design_1_i/axis_dwidth_converter_0_m_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">design_1_i/axis_dwidth_converter_0_m_axis_tvalid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="design_1_i/axis_dwidth_converter_0_m_axis_tlast">
+      <obj_property name="ElementShortName">design_1_i/axis_dwidth_converter_0_m_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">design_1_i/axis_dwidth_converter_0_m_axis_tlast</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="design_1_i/axis_dwidth_converter_0_m_axis_tdata">
+      <obj_property name="ElementShortName">design_1_i/axis_dwidth_converter_0_m_axis_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">design_1_i/axis_dwidth_converter_0_m_axis_tdata[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="vbus" fp_name="vbus580">
+      <obj_property name="label">pixel1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="design_1_i/axis_dwidth_converter_0_m_axis_tdata[7]">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">design_1_i/axis_dwidth_converter_0_m_axis_tdata[7]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="design_1_i/axis_dwidth_converter_0_m_axis_tdata[6]">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">design_1_i/axis_dwidth_converter_0_m_axis_tdata[6]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="design_1_i/axis_dwidth_converter_0_m_axis_tdata[5]">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">design_1_i/axis_dwidth_converter_0_m_axis_tdata[5]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="design_1_i/axis_dwidth_converter_0_m_axis_tdata[4]">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">design_1_i/axis_dwidth_converter_0_m_axis_tdata[4]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="design_1_i/axis_dwidth_converter_0_m_axis_tdata[3]">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">design_1_i/axis_dwidth_converter_0_m_axis_tdata[3]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="design_1_i/axis_dwidth_converter_0_m_axis_tdata[2]">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">design_1_i/axis_dwidth_converter_0_m_axis_tdata[2]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="design_1_i/axis_dwidth_converter_0_m_axis_tdata[1]">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">design_1_i/axis_dwidth_converter_0_m_axis_tdata[1]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="design_1_i/axis_dwidth_converter_0_m_axis_tdata[0]">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">design_1_i/axis_dwidth_converter_0_m_axis_tdata[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="design_1_i/util_reduced_logic_0_Res">
+      <obj_property name="ElementShortName">design_1_i/util_reduced_logic_0_Res</obj_property>
+      <obj_property name="ObjectShortName">design_1_i/util_reduced_logic_0_Res</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="design_1_i/hls_threshold_0_dst_V_V_TDATA">
+      <obj_property name="ElementShortName">design_1_i/hls_threshold_0_dst_V_V_TDATA[7:0]</obj_property>
+      <obj_property name="ObjectShortName">design_1_i/hls_threshold_0_dst_V_V_TDATA[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="design_1_i/hls_threshold_0_dst_V_V_TVALID">
+      <obj_property name="ElementShortName">design_1_i/hls_threshold_0_dst_V_V_TVALID</obj_property>
+      <obj_property name="ObjectShortName">design_1_i/hls_threshold_0_dst_V_V_TVALID</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="design_1_i/hls_threshold_0_sof_o">
+      <obj_property name="ElementShortName">design_1_i/hls_threshold_0_sof_o</obj_property>
+      <obj_property name="ObjectShortName">design_1_i/hls_threshold_0_sof_o</obj_property>
+   </wvobject>
+</wave_config>

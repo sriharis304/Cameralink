@@ -1,0 +1,582 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 377 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+Loading clock regions from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z030/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z030/ClockBuffers.xml
+Loading clock placement rules from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/PinFunctions.xml...
+Loading package from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z030/fbg676/Package.xml
+Loading io standards from /opt/Xilinx/Vivado/2014.4/data/./parts/xilinx/zynq/IOStandards.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1673.906 ; gain = 502.516 ; free physical = 7800 ; free virtual = 16819
+WARNING: [Vivado 12-2489] -input_jitter contains time 0.206180 which will be rounded to 0.206 to ensure it is an integer multiple of 1 picosecond [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+Finished Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_ila_0_1/ila_v5_0/constraints/ila.xdc] for cell 'design_1_i/ila_0'
+Finished Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_ila_0_1/ila_v5_0/constraints/ila.xdc] for cell 'design_1_i/ila_0'
+Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/CameraLinkTest.srcs/sources_1/bd/design_1/Cameralink_deca.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/CameraLinkTest.srcs/sources_1/bd/design_1/Cameralink_deca.xdc:230]
+Finished Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/CameraLinkTest.srcs/sources_1/bd/design_1/Cameralink_deca.xdc]
+Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_cameralink_to_axis_0_0/ip/v_vid_in_axi4s_0/v_vid_in_axi4s_0_clocks.xdc] for cell 'design_1_i/cameralink_to_axis_0/inst/v_vid_in_axi4s_0_inst/inst'
+Finished Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_cameralink_to_axis_0_0/ip/v_vid_in_axi4s_0/v_vid_in_axi4s_0_clocks.xdc] for cell 'design_1_i/cameralink_to_axis_0/inst/v_vid_in_axi4s_0_inst/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 145 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 132 instances
+  IBUFDS_DIFF_OUT => IBUFDS_DIFF_OUT (IBUFDS, IBUFDS): 12 instances
+  IBUFGDS_DIFF_OUT => IBUFDS_DIFF_OUT (IBUFDS, IBUFDS): 1 instances
+
+link_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 1712.578 ; gain = 853.676 ; free physical = 7789 ; free virtual = 16781
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z030'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z030'
+INFO: [Common 17-1223] The version limit for your license is '2014.11' and will expire in -218 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1719.605 ; gain = 7.020 ; free physical = 7786 ; free virtual = 16778
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/CameraLinkTest.cache/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/subhagato/Codes/smartheadlight_fpga/CameraLinkToAXI_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/subhagato/Codes/smartheadlight_fpga/hls_ips'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:1.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:1.0", from Vivado IP cache entry "f83f1247".
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1719.609 ; gain = 0.000 ; free physical = 7811 ; free virtual = 16781
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 11673f206
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1719.609 ; gain = 0.004 ; free physical = 7811 ; free virtual = 16781
+WARNING: [Constraints 18-1079] Register dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v1_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v1_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v1_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v1_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v1_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v1_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v1_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v1_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+
+Phase 2 Retarget
+
+INFO: [Opt 31-138] Pushed 5 inverter(s) to 11 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 16095af4f
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1719.609 ; gain = 0.004 ; free physical = 7809 ; free virtual = 16779
+
+Phase 3 Constant Propagation
+INFO: [Opt 31-138] Pushed 27 inverter(s) to 353 load pin(s).
+INFO: [Opt 31-10] Eliminated 2947 cells.
+Phase 3 Constant Propagation | Checksum: ce59f8a4
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1719.609 ; gain = 0.004 ; free physical = 7804 ; free virtual = 16775
+
+Phase 4 Sweep
+INFO: [Opt 31-12] Eliminated 7172 unconnected nets.
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-11] Eliminated 2514 unconnected cells.
+Phase 4 Sweep | Checksum: 87bd5b48
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1719.609 ; gain = 0.004 ; free physical = 7807 ; free virtual = 16773
+Ending Logic Optimization Task | Checksum: 87bd5b48
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1719.609 ; gain = 0.004 ; free physical = 7807 ; free virtual = 16773
+Implement Debug Cores | Checksum: 182187f83
+Logic Optimization | Checksum: 55e1abbf
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.12 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 7 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 4 newly gated: 0 Total Ports: 14
+Ending PowerOpt Patch Enables Task | Checksum: 1651def82
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1783.613 ; gain = 0.000 ; free physical = 7767 ; free virtual = 16734
+Ending Power Optimization Task | Checksum: 1651def82
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1783.613 ; gain = 64.004 ; free physical = 7767 ; free virtual = 16734
+INFO: [Common 17-83] Releasing license: Implementation
+37 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1783.613 ; gain = 71.035 ; free physical = 7767 ; free virtual = 16734
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1799.613 ; gain = 0.000 ; free physical = 7766 ; free virtual = 16734
+INFO: [Drc 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/CameraLinkTest.runs/impl_2/design_1_wrapper_drc_opted.rpt.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z030'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z030'
+INFO: [Common 17-1223] The version limit for your license is '2014.11' and will expire in -218 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Drc 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [Drc 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: c203b996
+
+Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1799.621 ; gain = 0.000 ; free physical = 7762 ; free virtual = 16730
+
+Phase 2 Placer Initialization
+
+Phase 2.1 Placer Initialization Core
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1799.621 ; gain = 0.000 ; free physical = 7762 ; free virtual = 16730
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1799.621 ; gain = 0.000 ; free physical = 7761 ; free virtual = 16729
+
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.1.1 Pre-Place Cells
+Phase 2.1.1.1 Pre-Place Cells | Checksum: c050c861
+
+Time (s): cpu = 00:00:00.62 ; elapsed = 00:00:00.63 . Memory (MB): peak = 1799.621 ; gain = 0.000 ; free physical = 7761 ; free virtual = 16729
+WARNING: [Constraints 18-1079] Register dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v1_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v1_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v1_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v1_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v1_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v1_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v1_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v1_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.1.2 IO & Clk Clean Up
+Phase 2.1.1.2 IO & Clk Clean Up | Checksum: c050c861
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1919.672 ; gain = 120.051 ; free physical = 7753 ; free virtual = 16721
+
+Phase 2.1.1.3 Implementation Feasibility check On IDelay
+Phase 2.1.1.3 Implementation Feasibility check On IDelay | Checksum: c050c861
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1919.672 ; gain = 120.051 ; free physical = 7753 ; free virtual = 16721
+
+Phase 2.1.1.4 Commit IO Placement
+Phase 2.1.1.4 Commit IO Placement | Checksum: 8d1aad80
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1919.672 ; gain = 120.051 ; free physical = 7753 ; free virtual = 16721
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: d851f981
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1919.672 ; gain = 120.051 ; free physical = 7753 ; free virtual = 16721
+
+Phase 2.1.2 Build Placer Netlist Model
+
+Phase 2.1.2.1 Place Init Design
+
+Phase 2.1.2.1.1 Init Lut Pin Assignment
+Phase 2.1.2.1.1 Init Lut Pin Assignment | Checksum: 161071171
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1919.672 ; gain = 120.051 ; free physical = 7746 ; free virtual = 16714
+Phase 2.1.2.1 Place Init Design | Checksum: 157ad7b06
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1919.672 ; gain = 120.051 ; free physical = 7745 ; free virtual = 16713
+Phase 2.1.2 Build Placer Netlist Model | Checksum: 157ad7b06
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1919.672 ; gain = 120.051 ; free physical = 7745 ; free virtual = 16713
+
+Phase 2.1.3 Constrain Clocks/Macros
+
+Phase 2.1.3.1 Constrain Global/Regional Clocks
+Phase 2.1.3.1 Constrain Global/Regional Clocks | Checksum: 157ad7b06
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1919.672 ; gain = 120.051 ; free physical = 7745 ; free virtual = 16713
+Phase 2.1.3 Constrain Clocks/Macros | Checksum: 157ad7b06
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1919.672 ; gain = 120.051 ; free physical = 7745 ; free virtual = 16713
+Phase 2.1 Placer Initialization Core | Checksum: 157ad7b06
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1919.672 ; gain = 120.051 ; free physical = 7745 ; free virtual = 16713
+Phase 2 Placer Initialization | Checksum: 157ad7b06
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1919.672 ; gain = 120.051 ; free physical = 7745 ; free virtual = 16713
+
+Phase 3 Global Placement
+Phase 3 Global Placement | Checksum: 10b2c2bd4
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:14 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7588 ; free virtual = 16679
+
+Phase 4 Detail Placement
+
+Phase 4.1 Commit Multi Column Macros
+Phase 4.1 Commit Multi Column Macros | Checksum: 10b2c2bd4
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:14 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7588 ; free virtual = 16679
+
+Phase 4.2 Commit Most Macros & LUTRAMs
+Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: 197540b63
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:16 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7560 ; free virtual = 16661
+
+Phase 4.3 Area Swap Optimization
+Phase 4.3 Area Swap Optimization | Checksum: 1104fd76f
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:16 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7559 ; free virtual = 16661
+
+Phase 4.4 updateClock Trees: DP
+Phase 4.4 updateClock Trees: DP | Checksum: 1104fd76f
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:16 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7559 ; free virtual = 16661
+
+Phase 4.5 Timing Path Optimizer
+Phase 4.5 Timing Path Optimizer | Checksum: 15bb8e192
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:17 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7559 ; free virtual = 16661
+
+Phase 4.6 Small Shape Detail Placement
+
+Phase 4.6.1 Commit Small Macros & Core Logic
+
+Phase 4.6.1.1 setBudgets
+Phase 4.6.1.1 setBudgets | Checksum: 116a875f1
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:17 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7559 ; free virtual = 16661
+
+Phase 4.6.1.2 Commit Slice Clusters
+Phase 4.6.1.2 Commit Slice Clusters | Checksum: 1ac885319
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:20 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7545 ; free virtual = 16646
+Phase 4.6.1 Commit Small Macros & Core Logic | Checksum: 1ac885319
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:20 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7545 ; free virtual = 16646
+
+Phase 4.6.2 Clock Restriction Legalization for Leaf Columns
+Phase 4.6.2 Clock Restriction Legalization for Leaf Columns | Checksum: 1ac885319
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:20 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7545 ; free virtual = 16646
+
+Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 1ac885319
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:20 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7544 ; free virtual = 16645
+Phase 4.6 Small Shape Detail Placement | Checksum: 1ac885319
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:20 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7544 ; free virtual = 16645
+
+Phase 4.7 Re-assign LUT pins
+Phase 4.7 Re-assign LUT pins | Checksum: 1ac885319
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:21 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7544 ; free virtual = 16645
+Phase 4 Detail Placement | Checksum: 1ac885319
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:21 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7544 ; free virtual = 16645
+
+Phase 5 Post Placement Optimization and Clean-Up
+
+Phase 5.1 PCOPT Shape updates
+Phase 5.1 PCOPT Shape updates | Checksum: 14f59d0c5
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:21 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7544 ; free virtual = 16645
+
+Phase 5.2 Post Commit Optimization
+
+Phase 5.2.1 updateClock Trees: PCOPT
+Phase 5.2.1 updateClock Trees: PCOPT | Checksum: 14f59d0c5
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:21 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7544 ; free virtual = 16645
+
+Phase 5.2.2 Post Placement Optimization
+
+Phase 5.2.2.1 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=2.070. For the most accurate timing information please run report_timing.
+Phase 5.2.2.1 Post Placement Timing Optimization | Checksum: 1300f3334
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:22 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7496 ; free virtual = 16641
+Phase 5.2.2 Post Placement Optimization | Checksum: 1300f3334
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:22 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7496 ; free virtual = 16641
+Phase 5.2 Post Commit Optimization | Checksum: 1300f3334
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:22 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7496 ; free virtual = 16641
+
+Phase 5.3 Sweep Clock Roots: Post-Placement
+Phase 5.3 Sweep Clock Roots: Post-Placement | Checksum: 1300f3334
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:22 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7496 ; free virtual = 16641
+
+Phase 5.4 Post Placement Cleanup
+Phase 5.4 Post Placement Cleanup | Checksum: 1300f3334
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:22 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7496 ; free virtual = 16641
+
+Phase 5.5 Placer Reporting
+
+Phase 5.5.1 Restore STA
+Phase 5.5.1 Restore STA | Checksum: 1300f3334
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:22 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7495 ; free virtual = 16641
+Phase 5.5 Placer Reporting | Checksum: 1300f3334
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:22 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7495 ; free virtual = 16641
+
+Phase 5.6 Final Placement Cleanup
+Phase 5.6 Final Placement Cleanup | Checksum: 1a54c1393
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:22 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7496 ; free virtual = 16641
+Phase 5 Post Placement Optimization and Clean-Up | Checksum: 1a54c1393
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:22 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7497 ; free virtual = 16642
+Ending Placer Task | Checksum: 15492a640
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:22 . Memory (MB): peak = 1951.688 ; gain = 152.066 ; free physical = 7497 ; free virtual = 16642
+INFO: [Common 17-83] Releasing license: Implementation
+54 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:24 . Memory (MB): peak = 1951.688 ; gain = 152.070 ; free physical = 7497 ; free virtual = 16642
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.93 . Memory (MB): peak = 1951.688 ; gain = 0.000 ; free physical = 7477 ; free virtual = 16641
+report_io: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1951.688 ; gain = 0.000 ; free physical = 7492 ; free virtual = 16639
+report_utilization: Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.34 . Memory (MB): peak = 1951.688 ; gain = 0.000 ; free physical = 7491 ; free virtual = 16638
+report_control_sets: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1951.688 ; gain = 0.000 ; free physical = 7490 ; free virtual = 16638
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z030'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z030'
+INFO: [Common 17-1223] The version limit for your license is '2014.11' and will expire in -218 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command route_design
+INFO: [Drc 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 9f1fc51a
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 2041.762 ; gain = 90.074 ; free physical = 7441 ; free virtual = 16518
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 9f1fc51a
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:19 . Memory (MB): peak = 2041.762 ; gain = 90.074 ; free physical = 7438 ; free virtual = 16515
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 9f1fc51a
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 2053.750 ; gain = 102.062 ; free physical = 7406 ; free virtual = 16483
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 2af47ba27
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 2092.609 ; gain = 140.922 ; free physical = 7355 ; free virtual = 16432
+INFO: [Route 35-57] Estimated Timing Summary | WNS=2.36   | TNS=0      | WHS=-0.173 | THS=-98.9  |
+
+Phase 2 Router Initialization | Checksum: 1c35feb3c
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:24 . Memory (MB): peak = 2092.609 ; gain = 140.922 ; free physical = 7382 ; free virtual = 16459
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1c003eee4
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:25 . Memory (MB): peak = 2092.609 ; gain = 140.922 ; free physical = 7349 ; free virtual = 16427
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1403
+ Number of Nodes with overlaps = 64
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 1e1a0e5e8
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:30 . Memory (MB): peak = 2092.609 ; gain = 140.922 ; free physical = 7317 ; free virtual = 16416
+INFO: [Route 35-57] Estimated Timing Summary | WNS=2.3    | TNS=0      | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 197f7421e
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:32 . Memory (MB): peak = 2092.609 ; gain = 140.922 ; free physical = 7337 ; free virtual = 16436
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 12d3d05ac
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:36 . Memory (MB): peak = 2092.609 ; gain = 140.922 ; free physical = 7319 ; free virtual = 16418
+INFO: [Route 35-57] Estimated Timing Summary | WNS=2.3    | TNS=0      | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1548f2577
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:36 . Memory (MB): peak = 2092.609 ; gain = 140.922 ; free physical = 7320 ; free virtual = 16419
+Phase 4 Rip-up And Reroute | Checksum: 1548f2577
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:36 . Memory (MB): peak = 2092.609 ; gain = 140.922 ; free physical = 7320 ; free virtual = 16419
+
+Phase 5 Delay CleanUp
+
+Phase 5.1 Update Timing
+Phase 5.1 Update Timing | Checksum: 1c53bb9fa
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:37 . Memory (MB): peak = 2092.609 ; gain = 140.922 ; free physical = 7324 ; free virtual = 16423
+INFO: [Route 35-57] Estimated Timing Summary | WNS=2.34   | TNS=0      | WHS=N/A    | THS=N/A    |
+
+Phase 5 Delay CleanUp | Checksum: 1c53bb9fa
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:37 . Memory (MB): peak = 2092.609 ; gain = 140.922 ; free physical = 7324 ; free virtual = 16423
+
+Phase 6 Clock Skew Optimization
+Phase 6 Clock Skew Optimization | Checksum: 1c53bb9fa
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:37 . Memory (MB): peak = 2092.609 ; gain = 140.922 ; free physical = 7326 ; free virtual = 16425
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Update Timing
+Phase 7.1 Update Timing | Checksum: 199121aee
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:37 . Memory (MB): peak = 2092.609 ; gain = 140.922 ; free physical = 7332 ; free virtual = 16430
+INFO: [Route 35-57] Estimated Timing Summary | WNS=2.34   | TNS=0      | WHS=0.023  | THS=0      |
+
+Phase 7 Post Hold Fix | Checksum: 1a6ae6808
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:38 . Memory (MB): peak = 2092.609 ; gain = 140.922 ; free physical = 7332 ; free virtual = 16430
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.17807 %
+  Global Horizontal Routing Utilization  = 2.77364 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 107d9e976
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:38 . Memory (MB): peak = 2092.609 ; gain = 140.922 ; free physical = 7332 ; free virtual = 16430
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 107d9e976
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:38 . Memory (MB): peak = 2092.609 ; gain = 140.922 ; free physical = 7332 ; free virtual = 16430
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 109062713
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:38 . Memory (MB): peak = 2092.609 ; gain = 140.922 ; free physical = 7329 ; free virtual = 16428
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=2.34   | TNS=0      | WHS=0.023  | THS=0      |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 11 Post Router Timing | Checksum: 109062713
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:38 . Memory (MB): peak = 2092.609 ; gain = 140.922 ; free physical = 7329 ; free virtual = 16428
+INFO: [Route 35-16] Router Completed Successfully
+
+Routing Is Done.
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:38 . Memory (MB): peak = 2092.609 ; gain = 140.922 ; free physical = 7329 ; free virtual = 16428
+INFO: [Common 17-83] Releasing license: Implementation
+69 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:22 ; elapsed = 00:00:40 . Memory (MB): peak = 2092.609 ; gain = 140.922 ; free physical = 7329 ; free virtual = 16428
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.95 . Memory (MB): peak = 2092.609 ; gain = 0.000 ; free physical = 7411 ; free virtual = 16432
+INFO: [Drc 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/CameraLinkTest.runs/impl_2/design_1_wrapper_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z030'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z030'
+INFO: [Common 17-1223] The version limit for your license is '2014.11' and will expire in -218 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command write_bitstream
+INFO: [Drc 23-27] Running DRC with 8 threads
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/iserdes_cm. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/iserdes_cm/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/iserdes_cm/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[0].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[0].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[0].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[0].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[0].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[0].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[1].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[1].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[1].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[1].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[1].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[1].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[2].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[2].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[2].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[2].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[2].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[2].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[3].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[3].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[3].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[3].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[3].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[3].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/iserdes_cm. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/iserdes_cm/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/iserdes_cm/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[0].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[0].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[0].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[0].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[0].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[0].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[1].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[1].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[1].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[1].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[1].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[1].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[2].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[2].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[2].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[2].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[2].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[2].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[3].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[3].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[3].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[3].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[3].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[3].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/iserdes_cm. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/iserdes_cm/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/iserdes_cm/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[0].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[0].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[0].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[0].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[0].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[0].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[1].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[1].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[1].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[1].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[1].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[1].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[2].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[2].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[2].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[2].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[2].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[2].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[3].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[3].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[3].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (REQP-1580) Phase alignment - Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[3].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[3].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[3].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [Drc 23-20] Rule violation (ZPS7-1) PS7 block required - The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 28 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/CameraLinkTest.runs/impl_2/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Mon Jul  6 15:17:20 2015. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2014.4/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2425.551 ; gain = 264.824 ; free physical = 7010 ; free virtual = 16075
+WARNING: [Vivado_Tcl 4-319] File design_1_wrapper.mmi does not exist
+bdTcl: /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/CameraLinkTest.runs/impl_2/.Xil/Vivado-13980-headlight-pc/HWH/design_1_bd.tcl
+INFO: [Common 17-206] Exiting Vivado at Mon Jul  6 15:17:20 2015...

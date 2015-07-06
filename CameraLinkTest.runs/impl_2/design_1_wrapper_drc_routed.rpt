@@ -1,0 +1,167 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Mon Jul  6 15:16:45 2015
+| Host         : headlight-pc running 64-bit Ubuntu 12.04.5 LTS
+| Command      : report_drc
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+           Max violations: <unlimited>
+         Violations found: 28
+
+2. REPORT DETAILS
+-----------------
+REQP-1580#1 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/iserdes_cm. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/iserdes_cm/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/iserdes_cm/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#2 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[0].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[0].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[0].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#3 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[0].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[0].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[0].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#4 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[1].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[1].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[1].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#5 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[1].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[1].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[1].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#6 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[2].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[2].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[2].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#7 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[2].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[2].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[2].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#8 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[3].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[3].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[3].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#9 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[3].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[3].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[1].rxn/loop3[3].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#10 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/iserdes_cm. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/iserdes_cm/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/iserdes_cm/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#11 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[0].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[0].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[0].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#12 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[0].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[0].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[0].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#13 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[1].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[1].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[1].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#14 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[1].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[1].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[1].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#15 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[2].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[2].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[2].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#16 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[2].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[2].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[2].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#17 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[3].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[3].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[3].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#18 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[3].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[3].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/loop0[2].rxn/loop3[3].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#19 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/iserdes_cm. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/iserdes_cm/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/iserdes_cm/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#20 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[0].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[0].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[0].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#21 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[0].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[0].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[0].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#22 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[1].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[1].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[1].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#23 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[1].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[1].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[1].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#24 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[2].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[2].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[2].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#25 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[2].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[2].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[2].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#26 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[3].iserdes_m. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[3].iserdes_m/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[3].iserdes_m/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#27 Warning
+Phase alignment  
+Unsupported clocking topology used for  design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[3].iserdes_s. This can result in corrupted data. The design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[3].iserdes_s/CLK / design_1_i/cameralink_to_axis_0/inst/top_lvds_4x3_7to1_sdr_rx_inst/rx0/rx0/loop3[3].iserdes_s/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

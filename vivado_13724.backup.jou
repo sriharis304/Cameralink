@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Jun 26 16:27:35 2015
+# Process ID: 9532
+# Log file: /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/vivado.log
+# Journal file: /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.xpr
+open_bd_design {/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {5} CONFIG.C_PROBE5_WIDTH {1}] [get_bd_cells ila_1]
+delete_bd_objs [get_bd_nets cameralink_to_axis_0_m_axis_video_tdata] [get_bd_nets cameralink_to_axis_0_m_axis_video_tlast] [get_bd_nets cameralink_to_axis_0_m_axis_video_tuser] [get_bd_nets cameralink_to_axis_0_m_axis_video_tvalid] [get_bd_nets cameralink_to_axis_0_vtd_active_video] [get_bd_nets cameralink_to_axis_0_vtd_hblank] [get_bd_nets cameralink_to_axis_0_vtd_vblank] [get_bd_nets cameralink_to_axis_0_vtd_hsync] [get_bd_nets cameralink_to_axis_0_vtd_vsync]
+endgroup
+reset_target all [get_files  /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/design_1.bd]
+reset_run impl_2
+reset_run synth_2
+startgroup
+set_property -dict [list CONFIG.C_PROBE5_WIDTH {80} CONFIG.C_NUM_OF_PROBES {14}] [get_bd_cells ila_1]
+endgroup
+connect_bd_net [get_bd_pins cameralink_to_axis_0/m_axis_video_tdata] [get_bd_pins ila_1/probe5]
+connect_bd_net [get_bd_pins cameralink_to_axis_0/m_axis_video_tlast] [get_bd_pins ila_1/probe6]
+connect_bd_net [get_bd_pins cameralink_to_axis_0/m_axis_video_tuser] [get_bd_pins ila_1/probe7]
+connect_bd_net [get_bd_pins cameralink_to_axis_0/m_axis_video_tvalid] [get_bd_pins ila_1/probe8]
+connect_bd_net [get_bd_pins cameralink_to_axis_0/vtd_active_video] [get_bd_pins ila_1/probe9]
+connect_bd_net [get_bd_pins cameralink_to_axis_0/vtd_hblank] [get_bd_pins ila_1/probe10]
+connect_bd_net [get_bd_pins cameralink_to_axis_0/vtd_vblank] [get_bd_pins ila_1/probe11]
+connect_bd_net [get_bd_pins cameralink_to_axis_0/vtd_hsync] [get_bd_pins ila_1/probe12]
+connect_bd_net [get_bd_pins cameralink_to_axis_0/vtd_vsync] [get_bd_pins ila_1/probe13]
+save_bd_design
+reset_target all [get_files  /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/design_1.bd]
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+set_property PROGRAM.FILE {/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.runs/impl_2/design_1_wrapper.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.runs/impl_2/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.runs/impl_2/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.runs/impl_2/design_1_wrapper.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+run_hw_ila hw_ila_1
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]

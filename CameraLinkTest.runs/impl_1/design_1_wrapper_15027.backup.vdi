@@ -1,0 +1,634 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Thu Jun 11 19:03:54 2015
+# Process ID: 12835
+# Log file: /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.runs/impl_1/design_1_wrapper.vdi
+# Journal file: /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 96 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+Loading clock regions from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z030/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z030/ClockBuffers.xml
+Loading clock placement rules from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/PinFunctions.xml...
+Loading package from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z030/fbg676/Package.xml
+Loading io standards from /opt/Xilinx/Vivado/2014.4/data/./parts/xilinx/zynq/IOStandards.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0.xdc] for cell 'design_1_i/vio_0'
+Finished Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0.xdc] for cell 'design_1_i/vio_0'
+Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc] for cell 'design_1_i/cameralink_to_axis_0'
+WARNING: [Vivado 12-584] No ports matched 'channel_x_clk_p'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:60]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for create_clock constraint with option '-objects [get_ports channel_x_clk_p]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:60]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'channel_y_clk_p'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:61]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for create_clock constraint with option '-objects [get_ports channel_y_clk_p]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:61]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'channel_z_clk_p'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:62]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for create_clock constraint with option '-objects [get_ports channel_z_clk_p]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:62]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'channel_x_clk_p'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:67]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for set_false_path constraint with option '-from [get_ports channel_x_clk_p]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:67]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'channel_x_clk_p'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_x_clk_n'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_x_data_p[0]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_x_data_n[0]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_x_data_p[1]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_x_data_n[1]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_x_data_p[2]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_x_data_n[2]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_x_data_p[3]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_x_data_n[3]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_y_clk_p'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_y_clk_n'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_y_data_p[0]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_y_data_n[0]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_y_data_p[1]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_y_data_n[1]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_y_data_p[2]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_y_data_n[2]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_y_data_p[3]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_y_data_n[3]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_z_clk_p'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_z_clk_n'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_z_data_p[0]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_z_data_n[0]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_z_data_p[1]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_z_data_n[1]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_z_data_p[2]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_z_data_n[2]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_z_data_p[3]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channel_z_data_n[3]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+Finished Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/ipshared/Xilinx.com/cameralink_to_axis_v1_0/b223973f/Cameralink_deca.xdc] for cell 'design_1_i/cameralink_to_axis_0'
+Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/Cameralink_deca.xdc]
+WARNING: [Vivado 12-584] No ports matched 'refclkin_p'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/Cameralink_deca.xdc:64]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for create_clock constraint with option '-objects [get_ports refclkin_p]'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/Cameralink_deca.xdc:64]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'refclkin_p'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/Cameralink_deca.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/Cameralink_deca.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'refclkin_n'. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/Cameralink_deca.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/Cameralink_deca.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+Finished Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/Cameralink_deca.xdc]
+Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_cameralink_to_axis_0_1/sources_1/ip/v_vid_in_axi4s_0/v_vid_in_axi4s_0_clocks.xdc] for cell 'design_1_i/cameralink_to_axis_0/inst/v_vid_in_axi4s_0_inst/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_cameralink_to_axis_0_1/sources_1/ip/v_vid_in_axi4s_0/v_vid_in_axi4s_0_clocks.xdc:2]
+INFO: [Timing 38-2] Deriving generated clocks [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_cameralink_to_axis_0_1/sources_1/ip/v_vid_in_axi4s_0/v_vid_in_axi4s_0_clocks.xdc:2]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1633.902 ; gain = 496.516 ; free physical = 10535 ; free virtual = 17985
+Finished Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_cameralink_to_axis_0_1/sources_1/ip/v_vid_in_axi4s_0/v_vid_in_axi4s_0_clocks.xdc] for cell 'design_1_i/cameralink_to_axis_0/inst/v_vid_in_axi4s_0_inst/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  IBUFDS_DIFF_OUT => IBUFDS_DIFF_OUT (IBUFDS, IBUFDS): 12 instances
+  IBUFGDS_DIFF_OUT => IBUFDS_DIFF_OUT (IBUFDS, IBUFDS): 1 instances
+
+link_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1633.902 ; gain = 775.004 ; free physical = 10539 ; free virtual = 17985
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z030'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z030'
+INFO: [Common 17-1223] The version limit for your license is '2014.11' and will expire in -193 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1640.930 ; gain = 7.012 ; free physical = 10567 ; free virtual = 18015
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.cache/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/subhagato/Codes/smartheadlight_fpga/CameraLinkToAXI/CameraLinkToAXI.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:1.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:1.0", from Vivado IP cache entry "f83f1247".
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1640.934 ; gain = 0.000 ; free physical = 10616 ; free virtual = 18050
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 1e2369db5
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1640.934 ; gain = 0.004 ; free physical = 10616 ; free virtual = 18050
+WARNING: [Constraints 18-1079] Register dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v1_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v1_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v1_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v1_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v1_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v1_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v1_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v1_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+
+Phase 2 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 3 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 19f7efed5
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1640.934 ; gain = 0.004 ; free physical = 10616 ; free virtual = 18050
+
+Phase 3 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 30 cells.
+Phase 3 Constant Propagation | Checksum: 1f394b038
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1640.934 ; gain = 0.004 ; free physical = 10614 ; free virtual = 18049
+
+Phase 4 Sweep
+INFO: [Opt 31-12] Eliminated 2296 unconnected nets.
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-11] Eliminated 2104 unconnected cells.
+Phase 4 Sweep | Checksum: 18a4d130f
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1640.934 ; gain = 0.004 ; free physical = 10614 ; free virtual = 18049
+Ending Logic Optimization Task | Checksum: 18a4d130f
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1640.934 ; gain = 0.004 ; free physical = 10614 ; free virtual = 18049
+Implement Debug Cores | Checksum: 20ee1ae22
+Logic Optimization | Checksum: 13abc8748
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.12 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 5 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 5 newly gated: 0 Total Ports: 10
+Ending PowerOpt Patch Enables Task | Checksum: 120f2209c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1704.938 ; gain = 0.000 ; free physical = 10586 ; free virtual = 18021
+Ending Power Optimization Task | Checksum: 120f2209c
+
+Time (s): cpu = 00:00:00.43 ; elapsed = 00:00:00.42 . Memory (MB): peak = 1704.938 ; gain = 64.004 ; free physical = 10586 ; free virtual = 18021
+INFO: [Common 17-83] Releasing license: Implementation
+35 Infos, 41 Warnings, 37 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1704.938 ; gain = 71.035 ; free physical = 10586 ; free virtual = 18021
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1720.938 ; gain = 0.000 ; free physical = 10584 ; free virtual = 18021
+INFO: [Drc 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z030'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z030'
+INFO: [Common 17-1223] The version limit for your license is '2014.11' and will expire in -193 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Drc 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [Drc 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: c0dba0b1
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1720.953 ; gain = 0.000 ; free physical = 10571 ; free virtual = 18006
+
+Phase 2 Placer Initialization
+
+Phase 2.1 Placer Initialization Core
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1720.953 ; gain = 0.000 ; free physical = 10571 ; free virtual = 18006
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1720.953 ; gain = 0.000 ; free physical = 10571 ; free virtual = 18006
+
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.1.1 Pre-Place Cells
+Phase 2.1.1.1 Pre-Place Cells | Checksum: 61f1d153
+
+Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1720.953 ; gain = 0.000 ; free physical = 10571 ; free virtual = 18006
+WARNING: [Constraints 18-1079] Register dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v1_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v1_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v1_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v1_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v1_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v1_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v1_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and dbg_hub/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v1_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.1.2 IO & Clk Clean Up
+Phase 2.1.1.2 IO & Clk Clean Up | Checksum: 61f1d153
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.78 . Memory (MB): peak = 1840.996 ; gain = 120.043 ; free physical = 10570 ; free virtual = 18005
+
+Phase 2.1.1.3 Implementation Feasibility check On IDelay
+Phase 2.1.1.3 Implementation Feasibility check On IDelay | Checksum: 61f1d153
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.79 . Memory (MB): peak = 1840.996 ; gain = 120.043 ; free physical = 10570 ; free virtual = 18005
+
+Phase 2.1.1.4 Commit IO Placement
+Phase 2.1.1.4 Commit IO Placement | Checksum: b6350a46
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.79 . Memory (MB): peak = 1840.996 ; gain = 120.043 ; free physical = 10570 ; free virtual = 18005
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 18ec358f7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.79 . Memory (MB): peak = 1840.996 ; gain = 120.043 ; free physical = 10570 ; free virtual = 18005
+
+Phase 2.1.2 Build Placer Netlist Model
+
+Phase 2.1.2.1 Place Init Design
+
+Phase 2.1.2.1.1 Init Lut Pin Assignment
+Phase 2.1.2.1.1 Init Lut Pin Assignment | Checksum: 2087a0418
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.89 . Memory (MB): peak = 1840.996 ; gain = 120.043 ; free physical = 10570 ; free virtual = 18005
+Phase 2.1.2.1 Place Init Design | Checksum: 1f6aa6743
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1840.996 ; gain = 120.043 ; free physical = 10570 ; free virtual = 18005
+Phase 2.1.2 Build Placer Netlist Model | Checksum: 1f6aa6743
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1840.996 ; gain = 120.043 ; free physical = 10570 ; free virtual = 18005
+
+Phase 2.1.3 Constrain Clocks/Macros
+
+Phase 2.1.3.1 Constrain Global/Regional Clocks
+Phase 2.1.3.1 Constrain Global/Regional Clocks | Checksum: 1f6aa6743
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1840.996 ; gain = 120.043 ; free physical = 10570 ; free virtual = 18005
+Phase 2.1.3 Constrain Clocks/Macros | Checksum: 1f6aa6743
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1840.996 ; gain = 120.043 ; free physical = 10570 ; free virtual = 18005
+Phase 2.1 Placer Initialization Core | Checksum: 1f6aa6743
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1840.996 ; gain = 120.043 ; free physical = 10570 ; free virtual = 18005
+Phase 2 Placer Initialization | Checksum: 1f6aa6743
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1840.996 ; gain = 120.043 ; free physical = 10570 ; free virtual = 18005
+
+Phase 3 Global Placement
+Phase 3 Global Placement | Checksum: 28e2efaa3
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10557 ; free virtual = 17993
+
+Phase 4 Detail Placement
+
+Phase 4.1 Commit Multi Column Macros
+Phase 4.1 Commit Multi Column Macros | Checksum: 28e2efaa3
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10557 ; free virtual = 17993
+
+Phase 4.2 Commit Most Macros & LUTRAMs
+Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: 12ba9716f
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10574 ; free virtual = 17985
+
+Phase 4.3 Area Swap Optimization
+Phase 4.3 Area Swap Optimization | Checksum: 1075989ca
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10574 ; free virtual = 17985
+
+Phase 4.4 updateClock Trees: DP
+Phase 4.4 updateClock Trees: DP | Checksum: 1075989ca
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10574 ; free virtual = 17985
+
+Phase 4.5 Timing Path Optimizer
+Phase 4.5 Timing Path Optimizer | Checksum: 195a079ad
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10574 ; free virtual = 17985
+
+Phase 4.6 Small Shape Detail Placement
+
+Phase 4.6.1 Commit Small Macros & Core Logic
+
+Phase 4.6.1.1 setBudgets
+Phase 4.6.1.1 setBudgets | Checksum: facd5206
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10574 ; free virtual = 17985
+
+Phase 4.6.1.2 Commit Slice Clusters
+Phase 4.6.1.2 Commit Slice Clusters | Checksum: 1f3238a89
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10568 ; free virtual = 17979
+Phase 4.6.1 Commit Small Macros & Core Logic | Checksum: 1f3238a89
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10568 ; free virtual = 17979
+
+Phase 4.6.2 Clock Restriction Legalization for Leaf Columns
+Phase 4.6.2 Clock Restriction Legalization for Leaf Columns | Checksum: 1f3238a89
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10568 ; free virtual = 17979
+
+Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 1f3238a89
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10568 ; free virtual = 17979
+Phase 4.6 Small Shape Detail Placement | Checksum: 1f3238a89
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10568 ; free virtual = 17979
+
+Phase 4.7 Re-assign LUT pins
+Phase 4.7 Re-assign LUT pins | Checksum: 1f3238a89
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10568 ; free virtual = 17979
+Phase 4 Detail Placement | Checksum: 1f3238a89
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10568 ; free virtual = 17979
+
+Phase 5 Post Placement Optimization and Clean-Up
+
+Phase 5.1 PCOPT Shape updates
+Phase 5.1 PCOPT Shape updates | Checksum: 23ea2980d
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10568 ; free virtual = 17979
+
+Phase 5.2 Post Commit Optimization
+
+Phase 5.2.1 updateClock Trees: PCOPT
+Phase 5.2.1 updateClock Trees: PCOPT | Checksum: 23ea2980d
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10568 ; free virtual = 17979
+
+Phase 5.2.2 Post Placement Optimization
+
+Phase 5.2.2.1 Post Placement Timing Optimization
+
+Phase 5.2.2.1.1 Restore Best Placement
+Phase 5.2.2.1.1 Restore Best Placement | Checksum: 1252a3ab4
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10567 ; free virtual = 17979
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.106. For the most accurate timing information please run report_timing.
+Phase 5.2.2.1 Post Placement Timing Optimization | Checksum: 1252a3ab4
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10567 ; free virtual = 17979
+Phase 5.2.2 Post Placement Optimization | Checksum: 1252a3ab4
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10567 ; free virtual = 17979
+Phase 5.2 Post Commit Optimization | Checksum: 1252a3ab4
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10567 ; free virtual = 17979
+
+Phase 5.3 Sweep Clock Roots: Post-Placement
+Phase 5.3 Sweep Clock Roots: Post-Placement | Checksum: 1252a3ab4
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10567 ; free virtual = 17979
+
+Phase 5.4 Post Placement Cleanup
+Phase 5.4 Post Placement Cleanup | Checksum: 1252a3ab4
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10567 ; free virtual = 17979
+
+Phase 5.5 Placer Reporting
+
+Phase 5.5.1 Restore STA
+Phase 5.5.1 Restore STA | Checksum: 1252a3ab4
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10567 ; free virtual = 17979
+Phase 5.5 Placer Reporting | Checksum: 1252a3ab4
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10567 ; free virtual = 17979
+
+Phase 5.6 Final Placement Cleanup
+Phase 5.6 Final Placement Cleanup | Checksum: 11a027272
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10567 ; free virtual = 17979
+Phase 5 Post Placement Optimization and Clean-Up | Checksum: 11a027272
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10567 ; free virtual = 17979
+Ending Placer Task | Checksum: 111df2f76
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1873.012 ; gain = 152.059 ; free physical = 10567 ; free virtual = 17979
+INFO: [Common 17-83] Releasing license: Implementation
+52 Infos, 45 Warnings, 37 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1873.012 ; gain = 152.070 ; free physical = 10567 ; free virtual = 17979
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1873.012 ; gain = 0.000 ; free physical = 10563 ; free virtual = 17979
+report_io: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1873.012 ; gain = 0.000 ; free physical = 10565 ; free virtual = 17978
+report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1873.012 ; gain = 0.000 ; free physical = 10566 ; free virtual = 17979
+report_control_sets: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1873.012 ; gain = 0.000 ; free physical = 10565 ; free virtual = 17978
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z030'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z030'
+INFO: [Common 17-1223] The version limit for your license is '2014.11' and will expire in -193 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command route_design
+INFO: [Drc 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 134adc9ae
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:18 . Memory (MB): peak = 1937.055 ; gain = 64.043 ; free physical = 10417 ; free virtual = 17819
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 134adc9ae
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:18 . Memory (MB): peak = 1937.055 ; gain = 64.043 ; free physical = 10417 ; free virtual = 17819
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 134adc9ae
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:18 . Memory (MB): peak = 1950.043 ; gain = 77.031 ; free physical = 10384 ; free virtual = 17786
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 1712f4ad6
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1962.902 ; gain = 89.891 ; free physical = 10371 ; free virtual = 17773
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.235  | TNS=0      | WHS=-2.11  | THS=-33    |
+
+Phase 2 Router Initialization | Checksum: 13527ee23
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:19 . Memory (MB): peak = 1962.902 ; gain = 89.891 ; free physical = 10371 ; free virtual = 17773
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 222da1b45
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 1962.902 ; gain = 89.891 ; free physical = 10371 ; free virtual = 17773
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 195
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 15db82371
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 1962.902 ; gain = 89.891 ; free physical = 10370 ; free virtual = 17773
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.31  | TNS=-0.432 | WHS=N/A    | THS=N/A    |
+
+
+Phase 4.1.2 GlobIterForTiming
+
+Phase 4.1.2.1 Update Timing
+Phase 4.1.2.1 Update Timing | Checksum: bd414ae6
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:29 . Memory (MB): peak = 2248.887 ; gain = 375.875 ; free physical = 10053 ; free virtual = 17453
+
+Phase 4.1.2.2 Fast Budgeting
+Phase 4.1.2.2 Fast Budgeting | Checksum: 11d2f9fef
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:29 . Memory (MB): peak = 2248.887 ; gain = 375.875 ; free physical = 10053 ; free virtual = 17453
+Phase 4.1.2 GlobIterForTiming | Checksum: b4120311
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:31 . Memory (MB): peak = 2248.887 ; gain = 375.875 ; free physical = 10027 ; free virtual = 17453
+Phase 4.1 Global Iteration 0 | Checksum: b4120311
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:31 . Memory (MB): peak = 2248.887 ; gain = 375.875 ; free physical = 10027 ; free virtual = 17453
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 152919508
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:31 . Memory (MB): peak = 2248.887 ; gain = 375.875 ; free physical = 10027 ; free virtual = 17453
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.0941| TNS=-0.0941| WHS=N/A    | THS=N/A    |
+
+
+Phase 4.2.2 GlobIterForTiming
+
+Phase 4.2.2.1 Update Timing
+Phase 4.2.2.1 Update Timing | Checksum: 1ec4c0aff
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:31 . Memory (MB): peak = 2248.887 ; gain = 375.875 ; free physical = 10027 ; free virtual = 17453
+
+Phase 4.2.2.2 Fast Budgeting
+Phase 4.2.2.2 Fast Budgeting | Checksum: 14c71afcf
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:32 . Memory (MB): peak = 2248.887 ; gain = 375.875 ; free physical = 10027 ; free virtual = 17453
+Phase 4.2.2 GlobIterForTiming | Checksum: 17a923a78
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:32 . Memory (MB): peak = 2248.887 ; gain = 375.875 ; free physical = 10027 ; free virtual = 17453
+Phase 4.2 Global Iteration 1 | Checksum: 17a923a78
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:32 . Memory (MB): peak = 2248.887 ; gain = 375.875 ; free physical = 10027 ; free virtual = 17453
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.3.1 Update Timing
+Phase 4.3.1 Update Timing | Checksum: 1e0795a08
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:32 . Memory (MB): peak = 2248.887 ; gain = 375.875 ; free physical = 10027 ; free virtual = 17453
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.0199 | TNS=0      | WHS=N/A    | THS=N/A    |
+
+
+Phase 4.3.2 GlobIterForTiming
+
+Phase 4.3.2.1 Update Timing
+Phase 4.3.2.1 Update Timing | Checksum: 1c93b92f5
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:32 . Memory (MB): peak = 2248.887 ; gain = 375.875 ; free physical = 10027 ; free virtual = 17453
+Phase 4.3.2 GlobIterForTiming | Checksum: 1da24df10
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:32 . Memory (MB): peak = 2248.887 ; gain = 375.875 ; free physical = 10027 ; free virtual = 17453
+Phase 4.3 Global Iteration 2 | Checksum: 1da24df10
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:32 . Memory (MB): peak = 2248.887 ; gain = 375.875 ; free physical = 10027 ; free virtual = 17453
+Phase 4 Rip-up And Reroute | Checksum: 1da24df10
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:32 . Memory (MB): peak = 2248.887 ; gain = 375.875 ; free physical = 10027 ; free virtual = 17453
+
+Phase 5 Delay CleanUp
+
+Phase 5.1 Update Timing
+Phase 5.1 Update Timing | Checksum: 1cdc3821c
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:32 . Memory (MB): peak = 2248.887 ; gain = 375.875 ; free physical = 10027 ; free virtual = 17453
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.0199 | TNS=0      | WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5 Delay CleanUp | Checksum: 1cdc3821c
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:32 . Memory (MB): peak = 2248.887 ; gain = 375.875 ; free physical = 10027 ; free virtual = 17453
+
+Phase 6 Clock Skew Optimization
+Phase 6 Clock Skew Optimization | Checksum: 1cdc3821c
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:32 . Memory (MB): peak = 2248.887 ; gain = 375.875 ; free physical = 10027 ; free virtual = 17453
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Update Timing
+Phase 7.1 Update Timing | Checksum: 20f041182
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:32 . Memory (MB): peak = 2248.887 ; gain = 375.875 ; free physical = 10027 ; free virtual = 17453
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.52  | TNS=-2.97  | WHS=-1.42  | THS=-2.74  |
+

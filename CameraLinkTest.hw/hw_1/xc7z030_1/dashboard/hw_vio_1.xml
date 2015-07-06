@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <DashboardHolder activeDashboard="VIO">
+        <Dashboard columnResizable="1" key="VIO" rowResizable="0" title="VIO">
+            <Settings/>
+            <GadgetContainer boxAxis="1" count="1" height="691"
+                layout="JideBoxLayout" vgap="6" width="1065">
+                <Gadget height="461" key="VIO Probes" name="VIO Probes" width="1065">
+                    <Probe core="hw_vio_1" name="design_1_i/cameralink_to_axis_0_m_axis_video_tdata[79:0]"/>
+                </Gadget>
+                <Settings/>
+            </GadgetContainer>
+        </Dashboard>
+    </DashboardHolder>
+</component>

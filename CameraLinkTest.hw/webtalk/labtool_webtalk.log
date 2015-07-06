@@ -1,0 +1,12 @@
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/CameraLinkTest.hw/webtalk/labtool_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 722626686 -regid "174679548_176449548_210570730_342" -xml /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/C..."
+    (file "/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest_backup/CameraLinkTest.hw/webtalk/labtool_webtalk.tcl" line 28)
+INFO: [Common 17-206] Exiting Webtalk at Mon Jul  6 12:42:09 2015...

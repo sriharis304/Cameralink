@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <DashboardHolder activeDashboard="ILA">
+        <Dashboard columnResizable="1" key="ILA" rowResizable="0" title="ILA">
+            <Settings/>
+            <GadgetContainer boxAxis="1" count="2" height="691"
+                layout="JideBoxLayout" vgap="6" width="489">
+                <Gadget height="266" key="Trigger Capture Status" width="489"/>
+                <Gadget height="384" key="Basic Trigger Setup" width="489">
+                    <Probe name="design_1_i/util_reduced_logic_0_Res"/>
+                    <Probe name="design_1_i/hls_threshold_0_dst_V_V_TVALID"/>
+                    <Probe name="design_1_i/hls_threshold_0_sof_o"/>
+                </Gadget>
+                <Settings/>
+            </GadgetContainer>
+        </Dashboard>
+    </DashboardHolder>
+</component>

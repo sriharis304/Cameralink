@@ -1,0 +1,298 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Jun 26 16:41:41 2015
+# Process ID: 13724
+# Log file: /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/vivado.log
+# Journal file: /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_cameralink_to_axis_0_1/design_1_cameralink_to_axis_0_1.upgrade_log'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/subhagato/Codes/smartheadlight_fpga/CameraLinkToAXI_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:06 . Memory (MB): peak = 5819.672 ; gain = 159.715 ; free physical = 11084 ; free virtual = 18841
+open_bd_design {/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- Xilinx.com:user:cameralink_to_axis:1.0 - cameralink_to_axis_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.1 - v_tc_0
+Adding component instance block -- xilinx.com:ip:ila:5.0 - ila_1
+Successfully read diagram <design_1> from BD file </home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/design_1.bd>
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {5} CONFIG.C_PROBE5_WIDTH {1}] [get_bd_cells ila_1]
+delete_bd_objs [get_bd_nets cameralink_to_axis_0_m_axis_video_tdata] [get_bd_nets cameralink_to_axis_0_m_axis_video_tlast] [get_bd_nets cameralink_to_axis_0_m_axis_video_tuser] [get_bd_nets cameralink_to_axis_0_m_axis_video_tvalid] [get_bd_nets cameralink_to_axis_0_vtd_active_video] [get_bd_nets cameralink_to_axis_0_vtd_hblank] [get_bd_nets cameralink_to_axis_0_vtd_vblank] [get_bd_nets cameralink_to_axis_0_vtd_hsync] [get_bd_nets cameralink_to_axis_0_vtd_vsync]
+endgroup
+reset_target all [get_files  /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1379] This design does not contain any processor.
+Generated Block Design Tcl file /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Exporting to file /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Verilog Output written to : design_1.v
+Verilog Output written to : design_1_wrapper.v
+Wrote  : </home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_xlconstant_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_xlconstant_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_xlconstant_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'design_1_xlconstant_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_cameralink_to_axis_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_cameralink_to_axis_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_cameralink_to_axis_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_cameralink_to_axis_0_0/v_vid_in_axi4s_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_cameralink_to_axis_0_0/v_vid_in_axi4s_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block cameralink_to_axis_0 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_v_tc_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_v_tc_0_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'design_1_v_tc_0_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_v_tc_0_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'design_1_v_tc_0_0' does not support 'Verilog Simulation' output products, delivering 'VHDL Simulation' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'design_1_v_tc_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'design_1_v_tc_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_ila_1_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_ila_1_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_ila_1_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'design_1_ila_1_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_1 .
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream
+[Fri Jun 26 16:42:55 2015] Launched synth_2...
+Run output will be captured here: /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.runs/synth_2/runme.log
+[Fri Jun 26 16:42:55 2015] Launched impl_2...
+Run output will be captured here: /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2014.4
+  **** Build date : Nov 18 2014-16:45:43
+    ** Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+
+INFO: hw_server application started
+INFO: Use Ctrl-C to exit hw_server application
+
+
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000015e0f14001
+set_property PROGRAM.FILE {/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.runs/impl_2/design_1_wrapper.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.runs/impl_2/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-2302] Device xc7z030 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+ERROR: [Labtools 27-1973] Mismatch between the design programmed into the device xc7z030 (JTAG device index = 1) and the probes file /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.runs/impl_2/debug_nets.ltx.
+ The device core at location user chain=1 index=0, has 14 ILA Input port(s), but the core in the probes file has 5 ILA Input port(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file OR
+2. Goto device properties and associate the correct probes file with the programming file already programmed in the device.
+close_hw
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Fri Jun 26 12:29:11 2015. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2014.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Jun 26 12:29:11 2015...
+delete_bd_objs [get_bd_nets v_tc_0_active_video_out] [get_bd_nets v_tc_0_hblank_out] [get_bd_nets v_tc_0_hsync_out] [get_bd_nets v_tc_0_vblank_out] [get_bd_nets v_tc_0_vsync_out] [get_bd_cells ila_1]
+open_run synth_2 -name synth_2
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z030fbg676-1
+INFO: [Netlist 29-17] Analyzing 303 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+Loading clock regions from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z030/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z030/ClockBuffers.xml
+Loading clock placement rules from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/PinFunctions.xml...
+Loading package from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z030/fbg676/Package.xml
+Loading io standards from /opt/Xilinx/Vivado/2014.4/data/./parts/xilinx/zynq/IOStandards.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/Cameralink_deca.xdc]
+Finished Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/Cameralink_deca.xdc]
+Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_cameralink_to_axis_0_0/ip/v_vid_in_axi4s_0/v_vid_in_axi4s_0_clocks.xdc] for cell 'design_1_i/cameralink_to_axis_0/inst/v_vid_in_axi4s_0_inst/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_cameralink_to_axis_0_0/ip/v_vid_in_axi4s_0/v_vid_in_axi4s_0_clocks.xdc:2]
+INFO: [Timing 38-2] Deriving generated clocks [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_cameralink_to_axis_0_0/ip/v_vid_in_axi4s_0/v_vid_in_axi4s_0_clocks.xdc:2]
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 6676.984 ; gain = 483.512 ; free physical = 10258 ; free virtual = 18089
+Finished Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_cameralink_to_axis_0_0/ip/v_vid_in_axi4s_0/v_vid_in_axi4s_0_clocks.xdc] for cell 'design_1_i/cameralink_to_axis_0/inst/v_vid_in_axi4s_0_inst/inst'
+Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0_clocks.xdc] for cell 'design_1_i/v_tc_0/U0'
+Finished Parsing XDC File [/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0_clocks.xdc] for cell 'design_1_i/v_tc_0/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 61 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 48 instances
+  IBUFDS_DIFF_OUT => IBUFDS_DIFF_OUT (IBUFDS, IBUFDS): 12 instances
+  IBUFGDS_DIFF_OUT => IBUFDS_DIFF_OUT (IBUFDS, IBUFDS): 1 instances
+
+open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 6765.297 ; gain = 789.766 ; free physical = 10109 ; free virtual = 17930
+delete_debug_core [get_debug_cores {u_ila_0 }]
+save_constraints
+close_design
+close_bd_design [get_bd_designs design_1]
+open_bd_design {/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- Xilinx.com:user:cameralink_to_axis:1.0 - cameralink_to_axis_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.1 - v_tc_0
+Adding component instance block -- xilinx.com:ip:ila:5.0 - ila_1
+Successfully read diagram <design_1> from BD file </home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/design_1.bd>
+delete_bd_objs [get_bd_nets v_tc_0_active_video_out] [get_bd_nets v_tc_0_hsync_out] [get_bd_nets v_tc_0_vblank_out] [get_bd_nets v_tc_0_vsync_out] [get_bd_nets v_tc_0_hblank_out] [get_bd_cells ila_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ila:5.0 ila_0
+endgroup
+set_property location {2.5 994 630} [get_bd_cells ila_0]
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {5} CONFIG.C_MONITOR_TYPE {Native} CONFIG.C_ENABLE_ILA_AXI_MON {false}] [get_bd_cells ila_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_PROBE0_WIDTH {80} CONFIG.C_NUM_OF_PROBES {10}] [get_bd_cells ila_0]
+endgroup
+connect_bd_net [get_bd_pins cameralink_to_axis_0/m_axis_video_tdata] [get_bd_pins ila_0/probe0]
+WARNING: [BD 41-1306] The connection to interface pin /cameralink_to_axis_0/m_axis_video_tdata is being overridden by the user. This pin will not be connected as a part of interface connection m_axis_video
+connect_bd_net [get_bd_pins cameralink_to_axis_0/m_axis_video_tlast] [get_bd_pins ila_0/probe1]
+WARNING: [BD 41-1306] The connection to interface pin /cameralink_to_axis_0/m_axis_video_tlast is being overridden by the user. This pin will not be connected as a part of interface connection m_axis_video
+connect_bd_net [get_bd_pins cameralink_to_axis_0/m_axis_video_tuser] [get_bd_pins ila_0/probe2]
+WARNING: [BD 41-1306] The connection to interface pin /cameralink_to_axis_0/m_axis_video_tuser is being overridden by the user. This pin will not be connected as a part of interface connection m_axis_video
+connect_bd_net [get_bd_pins cameralink_to_axis_0/m_axis_video_tvalid] [get_bd_pins ila_0/probe3]
+WARNING: [BD 41-1306] The connection to interface pin /cameralink_to_axis_0/m_axis_video_tvalid is being overridden by the user. This pin will not be connected as a part of interface connection m_axis_video
+connect_bd_net [get_bd_pins cameralink_to_axis_0/vtd_active_video] [get_bd_pins ila_0/probe5]
+WARNING: [BD 41-1306] The connection to interface pin /cameralink_to_axis_0/vtd_active_video is being overridden by the user. This pin will not be connected as a part of interface connection vtd
+delete_bd_objs [get_bd_nets cameralink_to_axis_0_vtd_active_video]
+connect_bd_net [get_bd_pins cameralink_to_axis_0/vtd_active_video] [get_bd_pins ila_0/probe4]
+WARNING: [BD 41-1306] The connection to interface pin /cameralink_to_axis_0/vtd_active_video is being overridden by the user. This pin will not be connected as a part of interface connection vtd
+connect_bd_net [get_bd_pins cameralink_to_axis_0/vtd_hblank] [get_bd_pins ila_0/probe5]
+WARNING: [BD 41-1306] The connection to interface pin /cameralink_to_axis_0/vtd_hblank is being overridden by the user. This pin will not be connected as a part of interface connection vtd
+connect_bd_net [get_bd_pins cameralink_to_axis_0/vtd_vblank] [get_bd_pins ila_0/probe6]
+WARNING: [BD 41-1306] The connection to interface pin /cameralink_to_axis_0/vtd_vblank is being overridden by the user. This pin will not be connected as a part of interface connection vtd
+connect_bd_net [get_bd_pins cameralink_to_axis_0/vtd_hsync] [get_bd_pins ila_0/probe7]
+WARNING: [BD 41-1306] The connection to interface pin /cameralink_to_axis_0/vtd_hsync is being overridden by the user. This pin will not be connected as a part of interface connection vtd
+connect_bd_net [get_bd_pins cameralink_to_axis_0/vtd_vsync] [get_bd_pins ila_0/probe8]
+WARNING: [BD 41-1306] The connection to interface pin /cameralink_to_axis_0/vtd_vsync is being overridden by the user. This pin will not be connected as a part of interface connection vtd
+connect_bd_net [get_bd_pins v_tc_0/active_video_out] [get_bd_pins ila_0/probe9]
+WARNING: [BD 41-1306] The connection to interface pin /v_tc_0/active_video_out is being overridden by the user. This pin will not be connected as a part of interface connection vtiming_out
+reset_target all [get_files  /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/design_1.bd]
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/ila_0/clk
+
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/design_1.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+connect_bd_net -net [get_bd_nets cameralink_to_axis_0_refclk_out] [get_bd_pins ila_0/clk] [get_bd_pins cameralink_to_axis_0/refclk_out]
+save_bd_design
+Wrote  : </home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/design_1.bd> 
+reset_target all [get_files  /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-1271] The connection to the pin: /cameralink_to_axis_0/vtd_vsync has been overridden by the user. This pin will not be connected as a part of the interface connection: cameralink_to_axis_0_vtd 
+WARNING: [BD 41-1271] The connection to the pin: /cameralink_to_axis_0/vtd_hsync has been overridden by the user. This pin will not be connected as a part of the interface connection: cameralink_to_axis_0_vtd 
+WARNING: [BD 41-1271] The connection to the pin: /cameralink_to_axis_0/vtd_active_video has been overridden by the user. This pin will not be connected as a part of the interface connection: cameralink_to_axis_0_vtd 
+WARNING: [BD 41-1271] The connection to the pin: /cameralink_to_axis_0/vtd_vblank has been overridden by the user. This pin will not be connected as a part of the interface connection: cameralink_to_axis_0_vtd 
+WARNING: [BD 41-1271] The connection to the pin: /cameralink_to_axis_0/vtd_hblank has been overridden by the user. This pin will not be connected as a part of the interface connection: cameralink_to_axis_0_vtd 
+INFO: [BD 41-1379] This design does not contain any processor.
+Generated Block Design Tcl file /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Exporting to file /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Verilog Output written to : design_1.v
+Verilog Output written to : design_1_wrapper.v
+Wrote  : </home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_xlconstant_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_xlconstant_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_xlconstant_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'design_1_xlconstant_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_cameralink_to_axis_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_cameralink_to_axis_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_cameralink_to_axis_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_cameralink_to_axis_0_0/v_vid_in_axi4s_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_cameralink_to_axis_0_0/v_vid_in_axi4s_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block cameralink_to_axis_0 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_v_tc_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_v_tc_0_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'design_1_v_tc_0_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_v_tc_0_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'design_1_v_tc_0_0' does not support 'Verilog Simulation' output products, delivering 'VHDL Simulation' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'design_1_v_tc_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'design_1_v_tc_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_ila_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_ila_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_ila_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'design_1_ila_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream
+[Fri Jun 26 16:53:19 2015] Launched synth_2...
+Run output will be captured here: /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.runs/synth_2/runme.log
+[Fri Jun 26 16:53:19 2015] Launched impl_2...
+Run output will be captured here: /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2014.4
+  **** Build date : Nov 18 2014-16:45:43
+    ** Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+
+INFO: hw_server application started
+INFO: Use Ctrl-C to exit hw_server application
+
+
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000015e0f14001
+set_property PROGRAM.FILE {/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.runs/impl_2/design_1_wrapper.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.runs/impl_2/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-2302] Device xc7z030 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+ERROR: [Labtools 27-1974] Mismatch between the design programmed into the device xc7z030_1 and the probes file /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.runs/impl_2/debug_nets.ltx.
+The device design has 2 ILA core(s) and 0 VIO core(s). The probes file has 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file OR
+2. Goto device properties and associate the correct probes file with the programming file already programmed in the device.
+set_property PROBES.FILE {/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.runs/impl_2/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.runs/impl_2/design_1_wrapper.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-32] Done pin status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 6765.355 ; gain = 0.000 ; free physical = 10036 ; free virtual = 17870
+refresh_hw_device [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-2302] Device xc7z030 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2015-Jun-26 17:02:42
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2015-Jun-26 17:02:42
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[23] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[22] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[21] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[20] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[19] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[18] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[17] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[16] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[15] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[14] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[13] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[12] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[11] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[10] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[9] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[8] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[7] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[6] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[5] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[4] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[3] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[2] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[1] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tdata[0] was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tvalid was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tvalid was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tlast was not found in the design.
+WARNING: Simulation object design_1_i/axis_dwidth_converter_0_m_axis_tkeep was not found in the design.

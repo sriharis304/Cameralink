@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <DashboardHolder activeDashboard="ILA">
+        <Dashboard columnResizable="1" key="ILA" rowResizable="0" title="ILA">
+            <Settings/>
+            <GadgetContainer boxAxis="1" count="2" height="691"
+                layout="JideBoxLayout" vgap="6" width="659">
+                <Gadget height="108" key="Trigger Capture Status" width="659"/>
+                <Gadget height="446" key="Basic Trigger Setup" width="659">
+                    <Probe name="design_1_i/cameralink_to_axis_0_m_axis_video_tuser"/>
+                    <Probe name="design_1_i/cameralink_to_axis_0_vtd_vblank"/>
+                    <Probe name="design_1_i/cameralink_to_axis_0_m_axis_video_tvalid"/>
+                    <Probe name="design_1_i/cameralink_to_axis_0_m_axis_video_tlast"/>
+                </Gadget>
+                <Settings/>
+            </GadgetContainer>
+        </Dashboard>
+    </DashboardHolder>
+</component>

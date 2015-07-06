@@ -1,0 +1,168 @@
+/*
+
+Vivado v2014.4 (64-bit)
+SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+Process ID: 9381
+
+Current time: 	6/26/15 4:25:28 PM
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: DISTRIB_ID=Ubuntu
+Version: 3.8.0-44-generic
+Architecture: amd64
+Available processors (cores): 8
+
+DISPLAY: :0.0
+Screen size: 2944x1080
+Screen resolution (DPI): 95
+Available screens: 2
+
+Java version: 	1.8.0_05 64-bit
+Java home: 	/opt/Xilinx/Vivado/2014.4/tps/lnx64/jre
+
+User name: 	subhagato
+User directory: /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest
+User country: 	US
+User language: 	en
+User locale: 	en_US
+Vivado preferences path: /home/subhagato/.Xilinx/Vivado/2014.4/vivado.ini
+Vivado layouts directory: /home/subhagato/.Xilinx/Vivado/2014.4/layouts/application
+
+GUI allocated memory:	129 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 4,831 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 33 MB (+32061kb) [00:00:04]
+// [Engine Memory]: 4,831 MB (+4914125kb) [00:00:04]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,836 MB. GUI used memory: 20 MB. Current time: 6/26/15 4:25:30 PM
+// [Engine Memory]: 4,836 MB (+5246kb) [00:00:09]
+// [GUI Memory]: 35 MB (+2562kb) [00:01:09]
+selectList(PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, "/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.xpr", 0); // s:v (JViewport:JComponent, ch:JFrame)
+// cm:N (ch:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 46 MB (+11345kb) [00:01:11]
+// [Engine Memory]: 4,917 MB (+85028kb) [00:01:11]
+// [Engine Memory]: 4,950 MB (+34193kb) [00:01:12]
+// [Engine Memory]: 4,971 MB (+22286kb) [00:01:12]
+// [Engine Memory]: 4,979 MB (+8388kb) [00:01:13]
+// [Engine Memory]: 4,992 MB (+13426kb) [00:01:14]
+// [Engine Memory]: 4,997 MB (+5185kb) [00:01:14]
+// [GUI Memory]: 62 MB (+16254kb) [00:01:14]
+// [Engine Memory]: 4,998 MB (+1630kb) [00:01:14]
+// Tcl Message: open_project /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,010 MB. GUI used memory: 32 MB. Current time: 6/26/15 4:26:39 PM
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/subhagato/Codes/smartheadlight_fpga/CameraLinkToAXI_IP'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'. 
+// [Engine Memory]: 5,014 MB (+16785kb) [00:01:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 62 MB (+539kb) [00:01:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 63 MB (+688kb) [00:01:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 64 MB (+729kb) [00:01:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 64 MB (+688kb) [00:01:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: CameraLinkTest; location: /home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest; part: xc7z030fbg676-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:06 . Memory (MB): peak = 5816.047 ; gain = 156.453 ; free physical = 11915 ; free virtual = 19190 
+dismissDialog("Open Project"); // cm:N (ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// a:a (ch:JFrame): Critical Messages: addNotify
+// [GUI Memory]: 64 MB (+244kb) [00:01:21]
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+// [GUI Memory]: 67 MB (+3138kb) [00:01:24]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 25, true); // w:Y (v:I, ch:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// [Engine Memory]: 5,016 MB (+2113kb) [00:01:27]
+// Tcl Message: open_hw 
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h:k (JPanel:JComponent, ch:JFrame)
+selectMenu(PAResourceOtoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Recent Targets"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+// ae:g (ch:JFrame): Open New Hardware Target: addNotify
+// [GUI Memory]: 73 MB (+6180kb) [00:01:32]
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, ae:g)
+// cm:N (ae:g):  Open Server : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// cm:N (ae:g):  Open Target : addNotify
+// TclEventType: HW_TARGET_CHANGE
+dismissDialog("Open Server"); // cm:N (ae:g)
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, ae:g)
+dismissDialog("Open Target"); // cm:N (ae:g)
+selectTable(PAResourceEtoH.HardwareDeviceChooserPanel_DEVICE_CHOOSER_TABLE, "xc7z030_1 ; 1372C093 ; 6", 1, "1372C093", 1); // D:u (JViewport:JComponent, ae:g)
+// [Engine Memory]: 5,024 MB (+8491kb) [00:01:35]
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, ae:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,029 MB. GUI used memory: 35 MB. Current time: 6/26/15 4:27:01 PM
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// cm:N (ae:g):  Open Hardware Target : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -url localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000015e0f14001] 
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/000015e0f14001] 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000015e0f14001 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.runs/impl_2/design_1_wrapper.bit} [lindex [get_hw_devices] 1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {/home/subhagato/Codes/smartheadlight_fpga/CameraLinkTest/CameraLinkTest.runs/impl_2/debug_nets.ltx} [lindex [get_hw_devices] 1] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 1] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// Run Command: PAResourceCommand.PACommandNames_ILA_WINDOW
+// TclEventType: HW_ILA_CHANGE
+// [Engine Memory]: 5,055 MB (+32522kb) [00:01:37]
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z030 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s). 
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, ae:g)
+// 'o' command handler elapsed time: 7 seconds
+// TclEventType: HW_ILA_CHANGE
+dismissDialog("Open Hardware Target"); // cm:N (ae:g)
+dismissDialog("Open New Hardware Target"); // ae:g (ch:JFrame)
+// [GUI Memory]: 76 MB (+2577kb) [00:01:39]
+// [Engine Memory]: 5,057 MB (+2097kb) [00:01:39]
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_1 ; Idle", 5, "hw_ila_1", 0, false); // f:au (JViewport:JComponent, ch:JFrame)
